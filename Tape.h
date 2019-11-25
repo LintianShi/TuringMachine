@@ -6,14 +6,19 @@
 using namespace std;
 
 class Tape {
-	public Tape(string s);
-	
-	private string data[2];
-	private char Blank;
-	private void expand(int i);
-	
-	public char read(int i);
-	public void write(char c, int i);
+	public: 
+		Tape();
+		Tape(string s);
+		char read(int i);
+		void write(char c, int i);
+		void print(int index, int head);
+		string toString();
+		
+	private: 
+		string blanks;
+		string data[2];
+		char blank;
+		void expand(int i);
 };
 
 #endif
