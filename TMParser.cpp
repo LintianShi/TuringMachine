@@ -8,9 +8,10 @@ using namespace std;
 #include "TMParser.h"
 #include "TM.h"
 int ww(string str);
+int fib(string str);
 int main() {
 	TM tm;
-	ifstream fin("WW.tm");
+	ifstream fin("FIB.tm");
 	string str;
 	while (getline(fin, str)) {
 		if (str != "" && str[0] != ';') {
@@ -20,7 +21,7 @@ int main() {
 	//tm.print();
 	string input;
 	cin>>input;
-	cout<<tm.judge(input)<<endl;;
+	cout<<tm.judge(input)<<endl;
 }
 
 vector<char> parserChar(string str) {
