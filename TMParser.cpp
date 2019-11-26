@@ -7,10 +7,10 @@ using namespace std;
 #include "Transition.h"
 #include "TMParser.h"
 #include "TM.h"
-
+int ww(string str);
 int main() {
 	TM tm;
-	ifstream fin("palindrome_detector_2tapes.tm");
+	ifstream fin("WW.tm");
 	string str;
 	while (getline(fin, str)) {
 		if (str != "" && str[0] != ';') {
@@ -20,7 +20,7 @@ int main() {
 	//tm.print();
 	string input;
 	cin>>input;
-	cout<<tm.judge(input)<<endl;
+	cout<<tm.judge(input)<<endl;;
 }
 
 vector<char> parserChar(string str) {

@@ -21,7 +21,6 @@ class TM {
 		vector<int> head;
 		vector<Tape> tape;
 		string curState;
-		bool isEqual(string a, string b);
 		bool isFinal(string state);
 		bool isLegal(string str);
 		bool isContain(char c);
@@ -40,5 +39,7 @@ class TM {
 		void setq0(string state) { q0 = state; }
 		void print();	
 };
+
+bool isEqual(string a, string b);
 
 #endif

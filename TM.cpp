@@ -51,7 +51,7 @@ bool TM::isFinal(string state) {
 	return false;
 }
 
-bool TM::isEqual(string a, string b) {
+bool isEqual(string a, string b) {
 	if (a.length() != b.length()) {
 		return false;
 	}
@@ -80,7 +80,7 @@ string TM::judge(string str) {
 	curState = q0;
 	int xx;
 	while (transit(step++)) {
-		//cin>>xx;
+//		cin>>xx;
 	}
 	cout<<"Result: "+tape[0].toString()<<endl;
 	cout<<"=========================END=========================\n";
